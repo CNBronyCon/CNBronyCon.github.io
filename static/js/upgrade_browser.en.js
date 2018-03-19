@@ -1,0 +1,2 @@
+alert("Unfortunately, CNBronyCon requires at least Internet Explorer 10 to open properly.\n\nPlease upgrade your Internet Explorer, or use other HTML5-compatible browsers (i.e. Mozilla Firefox and Google Chrome).\n\nYou will now be redirected to the download page of Mozilla Firefox ESR.");
+window.location.href="https://www.mozilla.org/en-US/firefox/organizations/all/";
