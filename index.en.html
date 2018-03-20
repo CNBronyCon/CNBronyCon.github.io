@@ -51,15 +51,35 @@
         html {
             background: #80cbc4;
         }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
     <!--Nav-->
-    <div class="mynav navbar-fixed hide-on-med-and-down slideInDown" style="position: fixed;height: 50px;width: 100%; transition: opacity 1s;opacity: 0">
+    <div class="mynav navbar-fixed" style="position: fixed; height: 50px; width: 100%; transition: opacity 1s; opacity: 0">
         <nav>
             <div class="nav-wrapper teal lighten-1">
-                <ul class="right">
+                <a class="brand-logo white-text">
+                    <div class="cnbc-logo"></div>
+                </a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
                     <li>
                         <a class="teal-text text-lighten-4" href="FAQ.en.html">FAQ</a>
                     </li>
@@ -71,11 +91,29 @@
                     </li>
                     <li>
                         <a class="btn amber waves-effect waves-light" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
-                            <i class="material-icons left">cake</i>JOIN THE PARTY</a>
+                            <i class="material-icons left">cake</i>Join the Party</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav white" id="mobile-menu" style="z-index: 9">
+            <li>
+                <a href="FAQ.en.html" class="waves-effect">
+                    <i class="material-icons">help</i>FAQ</a>
+            </li>
+            <li>
+                <a href="events.en.html" class="waves-effect">
+                    <i class="material-icons">schedule</i>Events</a>
+            </li>
+            <li>
+                <a href="mascots.en.html" class="waves-effect">
+                    <i class="material-icons">spa</i>Mascots</a>
+            </li>
+            <li>
+                <a class="btn amber waves-effect waves-light" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
+                    <i class="material-icons left">cake</i>Join the Party</a>
+            </li>
+        </ul>
     </div>
 
     <div class="swiper-container">
@@ -113,10 +151,13 @@
                             <i class="material-icons left">input</i>FUND THE CONVENTION</a>
                         <br>
                         <br>
-                        <div class="light" style="font-size: 90%">* Funding and online ticket purchasing will end on 16 April, 2018. If you didn't catch the funding process,
-                            you may purchase entry tickets at the scene.<br>** Chinese site.</div>
+                        <div class="light" style="font-size: 90%">* Funding and online ticket purchasing will end on 16 April, 2018. If you didn't catch the funding
+                            process, you may purchase entry tickets at the scene.
+                            <br>** Chinese site.</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>Help fund this convention</h3>
                         <p>You will be given some extra goodies if you purchase your ticket online.</p>
                         <a class="btn-large waves-effect waves-light amber" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
@@ -124,7 +165,8 @@
                         <br>
                         <br>
                         <div class="light" style="font-size: 90%">* Funding and online ticket purchasing will end on 16 April, 2018. If you miss the funding process,
-                            you may purchase entry tickets at the scene.<br>** Chinese site.</div>
+                            you may purchase entry tickets at the scene.
+                            <br>** Chinese site.</div>
                     </div>
                 </div>
             </div>
@@ -146,6 +188,8 @@
                             <br>** Not all applications will be accepted.</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>Are you a coser?</h3>
                         <p>No problem!</p>
                         <p>You can even enroll in our cosplay contest. If you pass our first stage of the contest, you may receive
@@ -164,10 +208,8 @@
             <!--CV页-->
             <div class="swiper-slide teal lighten-5" style="background-image:url(static/images/About.png); background-size: contain; background-repeat: no-repeat; background-position: bottom right;">
                 <div class="container">
-                    <div class="hide-on-med-and-down">
-                        <br>
-                        <br>
-                    </div>
+                    <br>
+                    <br>
                     <h2>We are all here.</h2>
                     <p>Come to CNBronyCon to meet us!</p>
                     <div class="row">
@@ -215,6 +257,8 @@
                             <br>** Not all applications will be accepted.</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>Want to run your own event?</h3>
                         <p>Welcome!</p>
                         <p>If you have your event selected, we will get your entry ticket covered.</p>
@@ -234,15 +278,21 @@
                         <h3>Want to sell your own stuff?</h3>
                         <p>Of course you can! As long as your stuff are within the limit, just sell whatever you want to sell!</p>
                         <a class="btn waves-effect waves-light amber" href="FAQ.en.html#Vendors">
-                            <i class="material-icons left">input</i>Learn more</a><br><br>
+                            <i class="material-icons left">input</i>Learn more</a>
+                        <br>
+                        <br>
                         <div class="light" style="font-size: 90%">* Service fee and deposit may be required to sell at the convention.
                             <br>** Application to sell at the convention must be completed before 30 June, 2018.</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>Want to sell your own stuff?</h3>
                         <p>Of course you can! As long as your stuff are within the limit, just sell whatever you want to sell!</p>
                         <a class="btn-large waves-effect waves-light amber" href="FAQ.en.html#Vendors">
-                            <i class="material-icons left">input</i>Learn more</a><br><br>
+                            <i class="material-icons left">input</i>Learn more</a>
+                        <br>
+                        <br>
                         <div class="light" style="font-size: 90%">* Service fee and deposit may be required to sell at the convention.
                             <br>** Application to sell at the convention must be completed before 30 June, 2018.</div>
                     </div>
@@ -258,6 +308,8 @@
                             <i class="material-icons left">input</i>Learn more</a>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>Volunteers!</h3>
                         <p>Why join the evil when you can do good?</p>
                         <a class="btn-large waves-effect waves-light amber" href="FAQ.en.html#Volunteering">
@@ -268,10 +320,8 @@
             <!--联系页-->
             <div class="swiper-slide brown lighten-5">
                 <div class="container teal-text text-lighten-1">
-                    <div class="hide-on-med-and-down">
-                        <br>
-                        <br>
-                    </div>
+                    <br>
+                    <br>
                     <h2>Keep in touch</h2>
                     <div class="row">
                         <div class="col s6 m3 l3">
@@ -330,6 +380,18 @@
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
     <script type="text/javascript" charset="UTF-8" src="static/js/init.js"></script>
     <script type="text/javascript" charset="UTF-8">
+        $(document).ready(function () {
+            $('.mydemo').css({ 'top': (window.innerHeight - 500) / 2 })
+        });
+        $(document).keydown(function (event) {
+            if (event.target.nodeName == 'TEXTAREA' || event.target.nodeName == 'INPUT') {
+                return;
+            };
+            /* Act on the event */
+            if (event.keyCode == 32) {
+                event.preventDefault();
+            };
+        });
         var weibo = document.getElementById('contact_via_weibo');
         var twitter = document.getElementById('contact_via_twitter');
         var mail = document.getElementById('contact_via_mail');
@@ -338,9 +400,18 @@
         twitter.addEventListener('click', function () { window.location.assign("https://twitter.com/CNBronyCon") }, false);
         mail.addEventListener('click', function () { window.location.assign("mailto:cnbronycon@aliyun.com?subject=CNBronyCon%202018%20International%20Support") }, false);
         telegram.addEventListener('click', function () { window.location.assign("https://t.me/CNBronyCon") }, false);
-        $(document).ready(function () {
-            $('.modal').modal();
-            $('.mydemo').css({ 'top': (window.innerHeight - 500) / 2 })
+        var swiper = new Swiper('.swiper-container', {
+            on: {
+                slideChangeTransitionEnd: function () {
+                    // console.log(this.activeIndex)
+                    document.querySelector('.mynav').style.opacity = this.activeIndex ? '1' : '0'
+                },
+            },
+            direction: 'vertical',
+            keyboard: {
+                enabled: true,
+            },
+            mousewheel: true,
         });
     </script>
 </body>

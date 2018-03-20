@@ -54,12 +54,18 @@
 
 <body>
     <img class="hide-on-med-and-down" style="position: fixed; right: 5%; bottom: 5%; max-width: 250px; max-height: 300px" src="//i.loli.net/2018/03/19/5aaf41f572c1a.png">
-    <div class="navbar-fixed hide-on-med-and-down">
+    <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper blue-grey lighten-2">
-                <ul class="right">
+            <div class="nav-wrapper blue-grey lighten-1">
+                <a href="/" class="brand-logo white-text">
+                    <div class="cnbc-logo"></div>
+                </a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
                     <li class="active">
-                        <a class="blue-grey-text text-lighten-5" href="FAQ.html">常见问题</a>
+                        <a class="blue-grey-text text-lighten-5">常见问题</a>
                     </li>
                     <li>
                         <a class="blue-grey-text text-lighten-5" href="events.html">活动表</a>
@@ -74,6 +80,24 @@
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav white" id="mobile-menu" style="z-index: 9">
+            <li>
+                <a class="waves-effect grey white-text">
+                    <i class="material-icons white-text">help</i>常见问题</a>
+            </li>
+            <li>
+                <a href="events.html" class="waves-effect">
+                    <i class="material-icons">schedule</i>活动表</a>
+            </li>
+            <li>
+                <a href="mascots.html" class="waves-effect">
+                    <i class="material-icons">spa</i>吉祥物</a>
+            </li>
+            <li>
+                <a class="btn amber waves-effect waves-light" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
+                    <i class="material-icons left">cake</i>加入派对</a>
+            </li>
+        </ul>
     </div>
 
     <main>
@@ -144,8 +168,7 @@
                     <p>同时，我们将面向全体马迷征集优秀的
                         <b>My Little Pony 角色</b> cosplay。
                         <b>通过审核的 coser 无需展会门票</b>，并获得展会官方配发的 coser 证件。欲参与此次征集的马迷需要在
-                        <a href="https://jq.qq.com/?_wv=1027&k=5PC9I8P"
-                            target=_blank>CNBronyCon 2018 Coser 群</a>内注册。</p>
+                        <a href="https://jq.qq.com/?_wv=1027&k=5PC9I8P" target=_blank>CNBronyCon 2018 Coser 群</a>内注册。</p>
                     <p>选出的最佳 coser 将获得展会官方吉祥物布偶一套，其他优秀 coser 也均会得到奖品一份。未通过审核的 coser (cosplay 服装和道具完成度低、
                         <b>原创角色 (OC) 和非 My Little Pony 角色的 cosplay</b> 均不会通过审核) 需要
                         <b>自行购买门票</b>入场，不会获得 coser 证件和奖品，并且将无法参与后续的 cosplay 比赛。</p>
@@ -213,6 +236,7 @@
     </footer>
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="static/js/init.js"></script>
 </body>
 
 </html>

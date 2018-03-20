@@ -51,15 +51,35 @@
         html {
             background: #80cbc4;
         }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
     <!--Nav-->
-    <div class="mynav navbar-fixed hide-on-med-and-down" style="position: fixed; height: 50px; width: 100%; transition: opacity 1s; opacity: 0">
+    <div class="mynav navbar-fixed" style="position: fixed; height: 50px; width: 100%; transition: opacity 1s; opacity: 0">
         <nav>
             <div class="nav-wrapper teal lighten-1">
-                <ul class="right">
+                <a class="brand-logo white-text">
+                    <div class="cnbc-logo"></div>
+                </a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
                     <li>
                         <a class="teal-text text-lighten-4" href="FAQ.html">常见问题</a>
                     </li>
@@ -76,6 +96,24 @@
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav white" id="mobile-menu" style="z-index: 9">
+            <li>
+                <a href="FAQ.html" class="waves-effect">
+                    <i class="material-icons">help</i>常见问题</a>
+            </li>
+            <li>
+                <a href="events.html" class="waves-effect">
+                    <i class="material-icons">schedule</i>活动表</a>
+            </li>
+            <li>
+                <a href="mascots.html" class="waves-effect">
+                    <i class="material-icons">spa</i>吉祥物</a>
+            </li>
+            <li>
+                <a class="btn amber waves-effect waves-light" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
+                    <i class="material-icons left">cake</i>加入派对</a>
+            </li>
+        </ul>
     </div>
 
     <div class="swiper-container">
@@ -116,6 +154,8 @@
                         <div class="light" style="font-size: 90%">* 众筹和网络购票将于 2018 年 4 月 16 日截止。如果您错过众筹，可以前往现场购票。</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>立刻参与众筹</h3>
                         <p>参与众筹的小伙伴们能拿到现场购票所不能获得的特别好礼噢！</p>
                         <a class="btn-large waves-effect waves-light amber" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
@@ -143,6 +183,8 @@
                             <br>** 未通过初审的 cosplay 不会得到门票优惠资格。</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>想一展自己的 cosplay 风采?</h3>
                         <p>没问题！</p>
                         <p>你甚至可以参与我们的 cosplay 比赛。成功入围 cosplay 比赛的马迷
@@ -160,10 +202,8 @@
             <!--CV页-->
             <div class="swiper-slide teal lighten-5" style="background-image:url(//i.loli.net/2018/03/19/5aaf41e9bd37b.png); background-size: contain; background-repeat: no-repeat; background-position: bottom right;">
                 <div class="container">
-                    <div class="hide-on-med-and-down">
-                        <br>
-                        <br>
-                    </div>
+                    <br>
+                    <br>
                     <h2>我们在等你</h2>
                     <p>是兄弟就跟我一起来
                         <del>贪玩蓝月</del> CNBronyCon 吧!</p>
@@ -212,6 +252,8 @@
                             <br>** 并非所有活动都会通过审核。</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>想举办属于自己的活动?</h3>
                         <p>欢迎!</p>
                         <p>如果您的活动入围，您的门票钱我们包了!</p>
@@ -232,18 +274,24 @@
                         <p>当然可以!</p>
                         <p>只要您的东西符合规定，任何人都可以成为摊主。</p>
                         <a class="btn waves-effect waves-light amber" href="FAQ.html#Vendors">
-                            <i class="material-icons left">input</i>了解摊主政策</a><br><br>
+                            <i class="material-icons left">input</i>了解摊主政策</a>
+                        <br>
+                        <br>
                         <div class="light" style="font-size: 90%">* 摊主申请将于 2018 年 6 月 30 日截止。
                             <br>** 可能需要缴纳摊主费用和押金才能进行摆摊操作。</div>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>想卖点自己的东西?</h3>
                         <p>当然可以!</p>
                         <p>只要您的东西符合规定，任何人都可以成为摊主。</p>
                         <a class="btn-large waves-effect waves-light amber" href="FAQ.html#Vendors">
-                            <i class="material-icons left">input</i>了解摊主政策</a><br><br>
-                            <div class="light" style="font-size: 90%">* 摊主申请将于 2018 年 6 月 30 日截止。
-                                    <br>** 可能需要缴纳摊主费用和押金才能进行摆摊操作。</div>
+                            <i class="material-icons left">input</i>了解摊主政策</a>
+                        <br>
+                        <br>
+                        <div class="light" style="font-size: 90%">* 摊主申请将于 2018 年 6 月 30 日截止。
+                            <br>** 可能需要缴纳摊主费用和押金才能进行摆摊操作。</div>
                     </div>
                 </div>
             </div>
@@ -257,6 +305,8 @@
                             <i class="material-icons left">input</i>了解志愿者</a>
                     </div>
                     <div class="hide-on-large-only">
+                        <br>
+                        <br>
                         <h3>志愿者!</h3>
                         <p>我们欢迎一切形式的志愿行动，只要它们能帮助展会办的更好。</p>
                         <a class="btn-large waves-effect waves-light amber" href="FAQ.html#Volunteering">
@@ -267,10 +317,8 @@
             <!--联系页-->
             <div class="swiper-slide brown lighten-5">
                 <div class="container teal-text text-lighten-1">
-                    <div class="hide-on-med-and-down">
-                        <br>
-                        <br>
-                    </div>
+                    <br>
+                    <br>
                     <h2>联系我们</h2>
                     <div class="row">
                         <div class="col s6 m3 l3">
@@ -337,8 +385,29 @@
         mail.addEventListener('click', function () { window.open("mailto:cnbronycon@aliyun.com?subject=CNBronyCon%202018%20问题咨询") }, false);
         telegram.addEventListener('click', function () { window.open("https://t.me/CNBronyCon") }, false);
         $(document).ready(function () {
-            $('.modal').modal();
             $('.mydemo').css({ 'top': (window.innerHeight - 200) / 2 })
+        });
+        var swiper = new Swiper('.swiper-container', {
+            on: {
+                slideChangeTransitionEnd: function () {
+                    // console.log(this.activeIndex)
+                    document.querySelector('.mynav').style.opacity = this.activeIndex ? '1' : '0'
+                },
+            },
+            direction: 'vertical',
+            keyboard: {
+                enabled: true,
+            },
+            mousewheel: true,
+        });
+        $(document).keydown(function (event) {
+            if (event.target.nodeName == 'TEXTAREA' || event.target.nodeName == 'INPUT') {
+                return;
+            };
+            /* Act on the event */
+            if (event.keyCode == 32) {
+                event.preventDefault();
+            };
         });
     </script>
 </body>

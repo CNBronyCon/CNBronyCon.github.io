@@ -53,18 +53,24 @@
 </head>
 
 <body>
-    <div class="navbar-fixed hide-on-med-and-down" style="-moz-animation-delay: 1s;">
+    <div class="navbar-fixed">
         <nav>
-            <div class="nav-wrapper pink lighten-1">
-                <ul class="right">
+            <div class="nav-wrapper pink">
+                <a href="/" class="brand-logo white-text">
+                    <div class="cnbc-logo"></div>
+                </a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
                     <li>
-                        <a class="pink-text text-lighten-5" href="FAQ.html">常见问题</a>
+                        <a class="pink-text text-lighten-4" href="FAQ.html">常见问题</a>
                     </li>
                     <li>
-                        <a class="pink-text text-lighten-5" href="events.html">活动表</a>
+                        <a class="pink-text text-lighten-4" href="events.html">活动表</a>
                     </li>
                     <li class="active">
-                        <a class="pink-text text-lighten-5" href="moscots.html">吉祥物</a>
+                        <a class="pink-text text-lighten-4">吉祥物</a>
                     </li>
                     <li>
                         <a class="btn amber waves-effect waves-light" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
@@ -73,6 +79,24 @@
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav white" id="mobile-menu" style="z-index: 9">
+            <li>
+                <a href="FAQ.html" class="waves-effect">
+                    <i class="material-icons">help</i>常见问题</a>
+            </li>
+            <li>
+                <a href="events.html" class="waves-effect">
+                    <i class="material-icons">schedule</i>活动表</a>
+            </li>
+            <li>
+                <a class="waves-effect grey white-text">
+                    <i class="material-icons white-text">spa</i>吉祥物</a>
+            </li>
+            <li>
+                <a class="btn amber waves-effect waves-light" href="https://zhongchou.modian.com/item/11397.html" target=_blank>
+                    <i class="material-icons left">cake</i>加入派对</a>
+            </li>
+        </ul>
     </div>
 
     <main>
@@ -261,6 +285,7 @@
     </footer>
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="static/js/init.js"></script>
     <script type="text/javascript" charset="UTF-8">
         var elem = document.querySelectorAll('.slider');
         var instance = M.Slider.init(elem, {
