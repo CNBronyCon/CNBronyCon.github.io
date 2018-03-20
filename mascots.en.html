@@ -163,9 +163,15 @@
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" charset="UTF-8" src="//cdn.bootcss.com/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
     <script type="text/javascript" charset="UTF-8">
+        var elem = document.querySelectorAll('.slider');
+        var instance = M.Slider.init(elem, {
+            height: window.innerWidth < 500 ? 400 : 600
+        });
         $(document).ready(function () {
             $('.materialboxed').materialbox();
-            $('.slider').slider();
+        });
+        $(document).ready(function () {
+            $('.materialboxed').materialbox();
         });
     </script>
 </body>
