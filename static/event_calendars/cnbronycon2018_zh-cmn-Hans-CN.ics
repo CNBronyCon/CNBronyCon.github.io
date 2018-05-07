@@ -15,14 +15,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:CNBronyCon 2018
-LOCATION:首都师范大学体育馆
+LOCATION:北京大红门国际会展中心
 DESCRIPTION:Where bronies of the east unite!
 UID:2018_eventpublisher_cnbronycon@aliyun.com
 DTSTART;TZID=Asia/Shanghai:20180714T080000
 DTEND;TZID=Asia/Shanghai:20180715T200000
 ORGANIZER;CN=CNBronyCon2018筹备委员会:MAILTO:cnbronycon@aliyun.com
 TRANSP:OPAQUE
-SEQUENCE:1
+SEQUENCE:2
 DTSTAMP:20180305T155110Z
 STATUS:CONFIRMED
 URL:https://www.cnbronycon.org/

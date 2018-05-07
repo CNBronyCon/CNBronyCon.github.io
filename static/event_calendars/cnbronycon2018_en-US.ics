@@ -15,14 +15,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:CNBronyCon 2018
-LOCATION:School Gym of Capital Normal University
+LOCATION:Dahongmen International Convention & Exhibition Center
 DESCRIPTION:Where bronies of the east unite!
 UID:2018_eventpublisher_cnbronycon@aliyun.com
 DTSTART;TZID=Asia/Shanghai:20180714T080000
 DTEND;TZID=Asia/Shanghai:20180715T200000
 ORGANIZER;CN=Committee CNBronyCon2018:MAILTO:cnbronycon@aliyun.com
 TRANSP:OPAQUE
-SEQUENCE:1
+SEQUENCE:2
 DTSTAMP:20180305T155110Z
 STATUS:CONFIRMED
 URL:https://www.cnbronycon.org/
